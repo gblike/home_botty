@@ -21,7 +21,7 @@ class Connection():
 
     def update_velocity(self, velocity):
         print(str(velocity))
-        directions = ('FORWARD', 'STOP')
+        directions = ('STOP', 'STOP')
         if (velocity.linear.x > 0 and velocity.angular.z == 0):
             directions = ('FORWARD', 'FORWARD')
         elif (velocity.linear.x < 0 and velocity.angular.z == 0):
@@ -94,7 +94,7 @@ class Connection():
         ros_client.daemon = True
 
         ros_client.start()
-        #read_loop.start()
+        read_loop.start()
         write_loop.start()
         ros_client.join()
 
