@@ -1,0 +1,3 @@
+[submodule "ez_motor_driver/sketch/slre"]
+	path = ez_motor_driver/sketch/slre
+	url = https://github.com/cesanta/slre.git
